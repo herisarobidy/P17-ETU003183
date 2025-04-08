@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>PrevisionServlet</servlet-name>
+        <servlet-class>PrevisionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DepenseServlet</servlet-name>
+        <servlet-class>DepenseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EtatServlet</servlet-name>
+        <servlet-class>EtatServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>PrevisionServlet</servlet-name>
+        <url-pattern>/prevision</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DepenseServlet</servlet-name>
+        <url-pattern>/depense</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EtatServlet</servlet-name>
+        <url-pattern>/etat</url-pattern>
+    </servlet-mapping>
+</web-app>
